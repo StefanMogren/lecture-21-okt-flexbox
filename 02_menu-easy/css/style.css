@@ -3,12 +3,22 @@
 }
 
 nav {
-
+    display: flex;
+    flex: 1;
+    width: 80vw;
+    background-color: rgb(221, 221, 221);
+    justify-content: space-evenly;
 }
 
 nav a {
-
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0;
 }
 nav a:hover {
-
+    background-color: rgb(131, 131, 131);
+    color: white;
+    transition: 1s;
 }
