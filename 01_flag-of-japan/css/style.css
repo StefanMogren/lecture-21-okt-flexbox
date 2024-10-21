@@ -8,9 +8,17 @@ body {
 }
 
 main {
-
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 aside {
-
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
 }
