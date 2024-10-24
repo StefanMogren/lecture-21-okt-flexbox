@@ -2,33 +2,35 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* header contains the zocom-image and the nav-bar */
 header {
+    width: 80vw;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    width: 80vw;
     background-color: aliceblue;
     justify-content: space-between;
 }
 
-
-nav {
+/* nav-bar contains the four nav-options */
+.nav-bar {
     display: flex;
     align-items: center;
-
+    gap: 1rem;
 }
 
-img {
+.zocom-image {
     height: 1.5rem;
     padding: 1rem;
-    
 }
 
-nav a {
-    padding: 1rem;
+/* four nav-menu-links in total */
+.nav-menu-link {
     text-decoration: none;
     color: grey;
+    padding: 1rem;
 }
-nav a:hover {
+.nav-menu-link:hover {
     background-color: rgb(107, 107, 107);
     color: white;
 }
