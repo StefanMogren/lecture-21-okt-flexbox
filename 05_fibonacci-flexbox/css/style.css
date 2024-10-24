@@ -1,7 +1,7 @@
 body {
-    margin: 0;
-    background: #eee;
     height: 100vh;
+    margin: auto;
+    background: #eee;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@ article {
     margin: 1rem;
 }
 
-article.reverse {
+.fibonacci-reverse {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -29,7 +29,6 @@ article section {
 article .box-1 {
     background:rgba(100,0,0,1);
     flex: 0;
-    
     
 }
 article .box-2 { 
