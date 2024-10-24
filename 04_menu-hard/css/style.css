@@ -2,23 +2,33 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* contains .zocom-logo, .nav-bar, and .nav-login-button */
 header {
-    display: flex;
     width: 80vw;
+    margin: auto;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(226, 226, 226);
     padding: 0.5rem 1rem;
 }
 
-img {
+.zocom-logo {
  height: 1.5rem;
+}
+
+/* contains the four .nav-menu-links */
+.nav-bar {
+    display: flex;
+    align-items: center;
 }
 
 header a {
     text-decoration: none;
-    color: grey;
-    padding: 0.5rem 1rem;
+        color: grey;
+}
+.nav-menu-link {
+    padding: 1rem;
 }
 
 a:hover {
@@ -26,7 +36,8 @@ a:hover {
     color: white;
 }
 
-a.login {
+.nav-login-button {
     border: solid 3px;
     border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
 }
