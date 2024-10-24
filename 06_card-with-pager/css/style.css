@@ -1,43 +1,43 @@
 body {
-    margin: 0;
-    background: rgb(212, 212, 212);
     height: 100vh;
+    margin-top: 5rem;
+    background: rgb(212, 212, 212);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Flex container for blockquote and footer */
+/* flex container for .text-quote and footer */
 article.card {
-    box-shadow: 0 0 2rem rgba(0,0,0,.1);
-    color: rgba(59, 28, 28, 0.4);
-    background-color: rgb(245, 245, 245);
-    display: flex;
-    flex-direction: column;
     width: 25rem;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    background-color: rgb(245, 245, 245);
+    color: rgba(59, 28, 28, 0.4);
+    box-shadow: 0 0 2rem rgba(0,0,0,.1);
 }
 
-/* Container for the text */
-blockquote {
+/* container for h1 and p */
+.text-quote {
     padding: 6rem 0;
     text-align: center;
 }
 
-.card h1 {
+.text-quote h1 {
     color: rgba(0,0,0,.8);
 }
 
-/* The three dots at the bottom */
-.card footer a {
-    background: rgba(0,0,0,.4);
+/* the three dots in the footer */
+.footer-pager-dots {
     height: 10px;
     width: 10px;
-    border-radius: 50%;
-    display: inline-block;
     margin: 0.5rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: rgba(0,0,0,.4);
 
 }
 
-.card footer a.active {
+.footer-pager-dots.active {
     background: rgba(0,0,0,.8);
 }
