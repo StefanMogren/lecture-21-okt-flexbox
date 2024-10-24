@@ -1,46 +1,52 @@
 body {
-    margin: 0;
-    background: rgb(212, 212, 212);
     height: 100vh;
+    margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(212, 212, 212);
 }
 
+/* flex container for .top-corner, .center, and .bottom-corner */
 article.card {
+    width: 200px;
+    height: 300px;
+    margin: auto;
+    padding: 0.5rem;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #f7f7f7;
     color: rgb(206, 56, 56);
     box-shadow: 0 0 2rem rgba(0,0,0,.1);
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 300px;
-    border-radius: 10px;
-    border: 5px solid white;
-    margin: auto;
-    padding: 0.5rem;
-    justify-content: space-between;
 }
 
-.card aside span {
-    color: #666;
+.card-number {
+    color: #666666;
 }
 
-.card aside.top {
+.top-corner {
     align-self: flex-start;
     text-align: center;
+
+    /* makes the heart larger */
+    &::first-letter {
+        font-size: 1.5rem;
+    }
 }
 
-.card aside.center {
+.center {
     align-self: center;
     font-size: 4rem;
 }
 
-.larger::first-letter {
-    font-size: 1.5rem;
-}
-
-.card aside.bottom {
+.bottom-corner {
     transform: rotate(180deg);
     align-self: flex-end;
     text-align: center;
-    
+
+    /* makes the heart larger */
+    &::first-letter {
+        font-size: 1.5rem;
+    }
 }
