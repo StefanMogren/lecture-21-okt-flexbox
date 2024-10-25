@@ -1,6 +1,5 @@
 body {
     height: 100vh;
-    margin: auto;
     background: #eee;
     display: flex;
     flex-direction: column;
@@ -15,15 +14,24 @@ article {
     display: flex;
     width: 80vw;
     margin: 1rem;
-}
-
-.fibonacci-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-article section {
     height: 5rem;
+    /* counter-reset: list-order 0; */
+}
+/* section {
+    counter-increment: list-order 1;
+}
+
+section:first-of-type {
+    counter-increment: none;
+}
+
+section::before {
+    content: counter(list-order);
+    background: rgba(100, calc(20*list-order), 0, 1);
+} */
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 article .box-1 {
